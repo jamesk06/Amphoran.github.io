@@ -1,162 +1,153 @@
 <HTML>
-<HEAD>
-	<link rel='shortcut icon' href='fly.png' type='image/x-icon'/>
-<TITLE>PvP Tips</TITLE>
-<STYLE>
-body
-{
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
-}
+    <head>
+        <link rel='shortcut icon' se='https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/pleyur/fly.png' type='image/x-icon'/>
+        
+    <title>PvP Tips</title>
 
-.firstBody 
-{
-	width:100%;
-	height:100px;
-	background-color: lightblue;	
-}
+    <style>
+    body
+    {
+        width:100%;
+        height:100%;
+        margin: 0; 
+        padding: 0;
+        background-color: white;
+    }
+    
+    .navbar /* nav bar */
+    {
+        width:100%;
+        height:10vh;
+        background-color: lightblue; 
+        position: relative;
+        margin-top: 0;
+        padding-top: 0;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+    }
+    
+    .secondBody
+    {
+        margin: 0, 0, 0, 0;
+        padding: 0, 0, 0, 0;
+        top: -29vh;
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+    
+    }
 
-.secondBody
-{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-	z-index = -1;
+    .logo 
+    {
+        position: relative;
+        padding-left: 1vw;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    #iframe 
+    {
+        position: absolute;
+        width: 100vw;
+        height: 120vh;
+    }
+    
+    .navbartext 
+    {
+        float:left; 
+        font-family: Verdana; 
+        font-size:50px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        position: absolute;
+    }
+    
+    .links
+    {
+        float:right;
+        position: relative;
+        padding-right: 3vw;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    
+    h1
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size:50px;
+    
+    }
+    
+    p
+    {
+        font-family: Verdana;
+        font-size:20px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+    }
 
-}
+    a
+    {
+        font-family: Verdana;
+        font-size:16px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
 
+    a:hover, a:active 
+    {
+      background-color: white;
+    }
+    
+    .semitransparent 
+    {
+        background: black;
+        opacity: 0.32;
+        position: absolute;
+        top:0; left:0; right:0; bottom:0;
+    }
+    
+    </style>
+    </head>
 
-	
-.thirdBody 
-{
-	width:100%;
-	height:90%;
-	background-color: lightblue;
-	
-	
-}
+    <body class="main">
+        <nav class="navbar">
+            
+            <DIV class = "navbartext"></DIV>
 
-.fourthBody 
-{
-	width:100%;
-	height:10%;
-	background-color: grey;	
-}
-
-.text 
-{
-	float:left; 
-	font-family: Verdana; 
-	font-size:50px;
-	text-shadow: 4px 4px 8px #FFFFFF;
-	padding-left: 75px;
-	padding-top: 15px;
-}
-
-.text1
-{
-	float:right;
-	padding-right: 75px;
-	padding-top: 25px;
-}
-
-
-h1
-{
-	font-family: 'Montserrat', sans-serif;
-	font-size:50px;
-
-}
-
-p
-{
-	font-family: Verdana;
-	font-size:20px;
-	text-shadow: 4px 4px 8px #FFFFFF;
-}
-a
-{
-	font-family: Verdana;
-	font-size:16px;
-	text-shadow: 4px 4px 8px #FFFFFF;
-	background-color: #clear;
-	color: black;
-	padding: 14px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-}
-a:hover, a:active 
-{
-  background-color: white;
-}
-#myVideo 
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	object-fit: cover;
-	z-index: 0;
-}
-
-.semitransparent 
-{
-    background: black;
-    opacity: 0.6;
-    position: absolute;
-    top:0; left:0; right:0; bottom:0;
-}
-
-</STYLE>
-</HEAD>
-<BODY>
-	<NAV class="firstBody">
-		
-		<DIV class = "text">
-			<IMG class='fade-in' src= "Stick.png" width=100 height=75> 
-		</DIV>
-		
-		<DIV class = "text1">
-			<!-- <P style = "text-align:right; font-size:16px; font-family: Verdana;"> -->
-			<A style = 
-				"border:1px solid;
-				border-bottom-color:#330000; 
-				border-top-color:#330000;  
-				border-left-color:#330000;  
-				border-right-color:#330000;"
-				class='fade-in' HREF="index.html">Home
-			</A>
-			<A class='fade-in'HREF="Wtap.html">Beginner</A>
-			<A class='fade-in'HREF="Strafe.html">Average</A>
-			<A class='fade-in'HREF="Aim.html">Advanced</A>
-			</P>
-		</DIV>
-		
-	</NAV>
-	
-	<DIV class = "secondBody">
-		<iframe
-			frameborder="0"
-			height="124%"
-			width="124%"
-			src="https://www.youtube.com/embed/NU-m4JuB4Xg?autoplay=1&mute=1&controls=0&showinfo=0&loop=1"
-			style="position: relative; left: -12%; top: -12%">
-			
-		</iframe>
-		<div class="semitransparent">
-		</div>
-	</DIV>
-	
-	<DIV class = "thirdBody">
-		Our Goal
-	</DIV>
-	
-	<DIV class = "fourthBody">
-	
-	</DIV>
-	
-</Body>
-</HTML>
+            <img class="logo" src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/pleyur/fly.png" width=85 height=75>
+            
+            <div class = "links">
+                <div style = "text-align:right; font-size:16px; font-family: Verdana;">
+                    <A style = 
+                        "border:1px solid;
+                        border-bottom-color:#330000; 
+                        border-top-color:#330000;  
+                        border-left-color:#330000;  
+                        border-right-color:#330000;"
+                        class='fade-in' HREF="index.html">Home
+                    </A>
+                    <A class='fade-in'HREF="Wtap.html">Beginner</A>
+                    <A class='fade-in'HREF="Strafe.html">Average</A>
+                    <A class='fade-in'HREF="Aim.html">Advanced</A>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <DIV class="secondBody">
+            <iframe id="iframe" frameborder="0" src="https://www.youtube.com/embed/NU-m4JuB4Xg?autoplay=1&mute=1&controls=0&showinfo=0&loop=1">
+            </iframe>
+                <div class="semitransparent">
+            </div>
+        </DIV>
+        
+    </body>
+    </HTML>
