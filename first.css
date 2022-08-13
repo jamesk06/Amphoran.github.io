@@ -1,0 +1,122 @@
+body
+    {
+        width:100%;
+        height:100%;
+        margin: 0; 
+        padding: 0;
+        background-color: white;
+    }
+    
+    .navbar /* nav bar */
+    {
+        width:100%;
+        height:10vh;
+        background-color: #2d2d2d;
+        position: relative;
+        margin-top: 0;
+        padding-top: 0;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
+        z-index: 10;
+    }
+    
+    .displayvideo
+    {
+        margin: 0, 0, 0, 0;
+        padding: 0, 0, 0, 0;
+        top: -25vh;
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+        border: none; 
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
+    }
+
+    .logo 
+    {
+        position: relative;
+        padding-left: 1vw;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    #iframe 
+    {
+        position: relative;
+        width: 100vw;
+        height: 115vh;
+        z-index: -1;
+    }
+    
+    .navbartext 
+    {
+        float:left; 
+        font-family: Montserrat, sans-serif; 
+        font-size:50px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        position: absolute;
+    }
+
+    .navtext 
+    {
+        color: #bebebedc;
+        border: 1px;
+        border-radius: 5px;
+    }
+    
+    .links
+    {
+        float:right;
+        position: relative;
+        padding-right: 3vw;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    a
+    {
+        font-family: Montserrat, sans-serif;
+        font-size:16px;
+        text-shadow: 3px 3px 5px #FFFFFF;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .navtext:hover, .navtext:active 
+    {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-bottom-color:#330000; 
+        border-top-color:#330000;  
+        border-left-color:#330000;  
+        border-right-color:#330000;
+        animation-name: fadein;
+        animation-duration: 2.4s;
+        animation-timing-function: ease;
+    }
+    
+    @keyframes fadein 
+    {
+        0% {background-color: rgba(255, 0, 0, 0);}
+        35% {background-color: rgba(255, 0, 0, 0.435);}
+        100% {background-color: rgba(255, 0, 0, 0.5);}
+    }
+
+    .semitransparent 
+    {
+        background: black;
+        opacity: 0.32;
+        position: absolute;
+        top:0; left:0; right:0; bottom:0;
+        z-index: 2;
+        transform: translate(0px, -5vh);
+    }
+
+
+    
