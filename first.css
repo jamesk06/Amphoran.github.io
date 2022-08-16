@@ -52,6 +52,11 @@ body
         text-decoration: none !important;
         transition: all 1.3s ease 0s;
     }
+
+    .nav-item 
+    {
+        text-align: right;
+    }
     
     .links
     {
