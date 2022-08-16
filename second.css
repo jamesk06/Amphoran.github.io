@@ -2,8 +2,8 @@
 {
     position: absolute;
     font-family: Montserrat, sans-serif;
-    font-size:0.85vw;
-    text-shadow: 3px 3px 5px #414141;
+    font-size:1.5vw;
+    text-shadow: 3px 3px 5px #000000;
     overflow: hidden;
     white-space: nowrap;
     width:100%;
