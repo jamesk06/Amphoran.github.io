@@ -34,7 +34,8 @@ body
         box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
         z-index: 10;
     }
-
+    
+    /* 
     .navbartext 
     {
         float:left; 
@@ -42,7 +43,8 @@ body
         font-size:50px;
         text-shadow: 4px 4px 8px #FFFFFF;
         position: absolute;
-    }
+    } 
+    */
 
     .navtext 
     {
@@ -66,8 +68,9 @@ body
     a
     {
         font-family: Montserrat, sans-serif;
-        font-size: 0.93vw;
-        text-shadow: 3px 3px 5px #FFFFFF;
+        font-size: 1.12vw;
+        font-weight: bold;
+        text-shadow: 3px 3px 12px #FFFFFF;
         background-color: rgba(255, 255, 255, 0);
         color: black;
         padding: 14px 25px;
