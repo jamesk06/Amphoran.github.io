@@ -70,7 +70,7 @@ body
         font-family: Montserrat, sans-serif;
         font-size: 1.12vw;
         font-weight: bold;
-        text-shadow: 3px 3px 12px #FFFFFF;
+        /* text-shadow: 2px 2px 18px #FFFFFF; */
         background-color: rgba(255, 255, 255, 0);
         color: black;
         padding: 14px 25px;
@@ -98,6 +98,7 @@ body
         border-left-color:#330000;  
         border-right-color:#330000;
         color: #ffffff !important;
+        text-shadow: 3px 3px 12px #FFFFFF;
         animation-name: fadein;
         animation-duration: 2.4s;
         animation-timing-function: ease;
