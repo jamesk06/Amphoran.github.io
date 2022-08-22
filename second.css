@@ -44,6 +44,7 @@
 .examplebox
 {
     text-align: left;
+    padding: 1.85px;
     border: solid;
     border-radius: 8px;
     border-width: 1px;
@@ -53,6 +54,7 @@
 .examplecontainer 
 {
     padding: 20px;
+    margin-top: 1.5vh !important; 
 }
 
 .exampleboxheader 
@@ -82,7 +84,7 @@
 
 
 .dropdown_arrow:focus-visible{
-        display: visible;
+    display: visible;
 
 }
 
