@@ -61,7 +61,9 @@
 .exampleboxheader 
 {
     padding: 20px 10px;
+    font-weight: 500;
     font-size: 1.3vw;
+    color:#5a5a5a;
     cursor:auto;
 }
 
@@ -83,7 +85,27 @@
     transform: rotate(45deg);
 }
 
+#framevideo 
+{
+    width: 100%;
+    height: 100vh !important;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh; 
+}
 
+@media (min-aspect-ratio: 16/9) {
+    .displayvideo iframe {
+        /* height = 100 * (9 / 16) = 56.25 */
+        height: 56.25vw;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .displayvideo iframe {
+        /* width = 100 / (9 / 16) = 177.777777 */
+        width: 177.78vh;
+    }
+}
 
 .dropdown_arrow:focus-visible{
     display: visible;
