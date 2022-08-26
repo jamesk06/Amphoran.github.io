@@ -85,13 +85,36 @@
     transform: rotate(45deg);
 }
 
-#framevideo 
+#examplecontent1
+
+#examplecontent2
+{
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+}
+
+#examplecontent3
+
+#examplecontent4
+
+#examplecontent5
+
+#examplecontent6
+
+#iframevideo 
 {
     width: 100%;
     height: 100vh !important;
-    padding-bottom: 10vh;
-    margin-bottom: 10vh; 
+    padding-bottom: 100px;
+    margin-bottom: 100px; 
 }
+
+.w-tapvideo
+{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 
 @media (min-aspect-ratio: 16/9) {
     .displayvideo iframe {
