@@ -120,6 +120,17 @@
                 $("#examplecontent1").animate({"background-color":"#ffffff"}, 230);
                 $("#examplebutton1").animate({"font-size":"1.3vw", "color":"#5a5a5a", "font-weight":"500", "background-color":"#ffffff"}, 230);
               });
+                
+                $("#examplebutton2").click(function(){
+                $("#examplecontent2").slideToggle(500);
+              });
+              $("#examplebutton2").hover(function() {
+                $("#examplecontent2").animate({"background-color":"#ebebeb"}, 230);
+                $("#examplebutton2").animate({"font-size":"1.35vw", "color":"#000000", "font-weight":"600", "background-color":"#ebebeb"}, 230);
+              }, function() {
+                $("#examplecontent2").animate({"background-color":"#ffffff"}, 230);
+                $("#examplebutton2").animate({"font-size":"1.3vw", "color":"#5a5a5a", "font-weight":"500", "background-color":"#ffffff"}, 230);
+              });
             </script>
 
     </body>
