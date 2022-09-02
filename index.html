@@ -19,7 +19,8 @@
 
     <body>
         <div class="main">
-
+		
+	
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -53,11 +54,11 @@
             </nav>
 
             <div class="displayvideo" id="alan1">
-                <iframe id="iframevideo" title="video" frameborder="0" src="https://www.youtube.com/embed/_4hkmcb1MSU?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=_4hkmcb1MSU"></iframe>
+                <iframe id="iframe-video" title="video" frameborder="0"></iframe>
             </div>
             
             <div class="videotext" id="videotext">
-                <div class="introtext col-3">McPvp</div>
+                <div class="introtext col-3">MMcPvp</div>
                 <div class="introdescription">Learn everything about 1.8 PvP</div>
             </div>
 
@@ -170,12 +171,45 @@
             </div>
 
 
-        </div>    
+        </div>
+		<script>
+			const videos = ["hz_kk_0mG3A", "0OlgNAd-dAg", "I70Y3HlvzlM", "NF9ZO35L6Oo","_4hkmcb1MSU","eUwgTUc_B8k","hXUT6NmBenk"];
+			const  videoId = videos[Math.floor(Math.random() * videos.length)];
+			const  videoLink = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=" + videoId;
+			const  iframe = document.getElementById("iframe-video");
+			iframe.src = videoLink;
+			iframe.play();
+		</script>
+			<script>
+				const body = document.body;
+				let lastScroll = 0;
+
+				window.addEventListener("scroll", () => 
+				{
+					const currentScroll = window.pageYOffset;
+					if (currentScroll <= 0) {
+						body.classList.remove("scroll-up");
+						return;
+					}
+
+					if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) 
+					{
+						body.classList.remove("scroll-up");
+						body.classList.add("scroll-down");
+					} 
+					else if (currentScroll < lastScroll && body.classList.contains("scroll-down")) 
+					{
+						body.classList.remove("scroll-down");
+						body.classList.add("scroll-up");
+					}
+					lastScroll = currentScroll;
+				});
+				
+			</script>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-
             <script>
                
 
