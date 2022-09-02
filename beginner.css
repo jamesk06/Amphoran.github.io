@@ -184,3 +184,95 @@ body
         padding-bottom: 60vh;
         z-index: 1;
     }
+
+    .containertriangle
+    {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .righttriangle
+    {
+        background: linear-gradient(170deg,#c0dafd,rgb(209, 225, 254) 30%,#d1ecfe);
+        height: 80vh;
+        position: absolute;
+        left: -30px;
+        right: -1vw;
+        margin-right: 0vw;
+        overflow: hidden;
+        transform: rotate(-4deg);
+        z-index: -1;
+    }
+
+    .boxes 
+    {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .examplebox
+    {
+        text-align: left;
+        padding: 1.85px;
+        border: solid;
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: #19161a;
+        background-color: #ffffff !important;
+    }
+
+    .examplecontainer 
+    {
+        padding: 20px;
+        position: absolute;
+        margin-top: 1.5vh !important; 
+        background: none !important;
+    }
+
+    .exampleboxheader 
+    {
+        padding: 20px 10px;
+        font-weight: 500;
+        font-size: 1.3vw;
+        color:#5a5a5a;
+        cursor:auto;
+    }
+
+    .exampledropdown 
+    {
+        display: none;
+        padding: 0 1.5vw 2vh 1.5vw;
+    }
+
+    .dropdown_arrow {
+        left: 20vw;
+        top: 2.7vh;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+        overflow: visible;
+        right: 30px;
+        width: 1vw;
+        height: 1.97vh;
+        transform: rotate(45deg);
+    }
+
+    #aimingbox
+    {
+        position: absolute;
+        margin-left: 5vw;
+        transform: translate(0, -80vh);
+    }
+
+    #wtapbox
+    {
+        left: 40vw;
+        /* margin-left: 5vw; */
+        transform: translate(0, -80vh);
+    }
+
+    .exampleboxheadercursoricon 
+    {
+        cursor: pointer;
+    }
