@@ -60,7 +60,47 @@
                     <img src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/main/lessonsbeginnerimage.png" id="beginnerimage">
                 </div>
             </div>
-            
+            <div class="containertriangle">
+              <div class="righttriangle" id="trianglebackground">
+                
+
+              </div>
+            </div>
+            <div class="container-fluid">
+
+                  <div class="examplecontainer col-4" id="aimingbox">
+                    <div class="examplebox">
+                        <div class="exampleboxheader" id="examplebutton1">
+                            Aiming
+
+                                
+                            <i class="fa fa-chevron-down pull-right exampleboxheadercursoricon"  aria-hidden="true"></i>
+                        </div>
+                        <div class="exampledropdown" id="examplecontent1">
+                            When aiming, you generally want to aim parallel to the ground, 
+                            the exception being when they are below your y-level. This will allow you to get the most reach possible, by aiming in a straight line to the closest part of your opponent possible. Aiming even slightly slanted can result in your opponent getting the first hit, and you losing the fight. 
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="examplecontainer col-4" id="wtapbox">
+                  <div class="examplebox">
+                      <div class="exampleboxheader" id="examplebutton2">
+                          W-Tapping
+
+                              
+                          <i class="fa fa-chevron-down pull-right exampleboxheadercursoricon"  aria-hidden="true"></i>
+                      </div>
+                      <div class="exampledropdown" id="examplecontent2">
+                          W tapping is a method to reset your sprint. After the first hit you land on an opponent, the amount of knockback they will receive from each hit then on, will decrease. In order to always deal the most knockback and make combos easier, reset your sprint by releasing w, and then pressing it down again. 
+                          <div class="container-fluid w-tapvideo">
+                              <iframe id="iframevideo" class="container-fluid" title="video" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen src="https://www.youtube-nocookie.com/embed/VHnfwqhjE04?autoplay=1&controls=0&showinfo=0&loop=1"></iframe>
+                          </div> 
+                      </div>
+                      
+                  </div>
+              </div>
 
 
         </div>    
@@ -70,7 +110,16 @@
             <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 
             <script>
-               
+               $("#examplebutton1").click(function(){
+                $("#examplecontent1").slideToggle(500);
+              });
+              $("#examplebutton1").hover(function() {
+                $("#examplecontent1").animate({"background-color":"#ebebeb"}, 230);
+                $("#examplebutton1").animate({"font-size":"1.35vw", "color":"#000000", "font-weight":"600", "background-color":"#ebebeb"}, 230);
+              }, function() {
+                $("#examplecontent1").animate({"background-color":"#ffffff"}, 230);
+                $("#examplebutton1").animate({"font-size":"1.3vw", "color":"#5a5a5a", "font-weight":"500", "background-color":"#ffffff"}, 230);
+              });
             </script>
 
     </body>
